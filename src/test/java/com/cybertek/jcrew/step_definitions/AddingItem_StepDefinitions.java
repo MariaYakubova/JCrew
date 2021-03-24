@@ -1,6 +1,8 @@
 package com.cybertek.jcrew.step_definitions;
 
+//import com.cybertek.jcrew.pages.ClickingTheSweaterButton;
 import com.cybertek.jcrew.pages.JCrewHomePage;
+import com.cybertek.jcrew.pages.SweaterButton;
 import com.cybertek.jcrew.utilities.BrowserUtils;
 import com.cybertek.jcrew.utilities.ConfigurationReader;
 import com.cybertek.jcrew.utilities.Driver;
@@ -21,6 +23,7 @@ import java.util.List;
 
 public class AddingItem_StepDefinitions {
     JCrewHomePage jcrewHomePage = new JCrewHomePage();
+    SweaterButton sweaterButton = new SweaterButton();
     // DropdownsPage dropdownsPage = new DropdownsPage();
 
     //Select quantityDropdown = new Select(JCrewHomePage.quantityDropdown);
@@ -52,8 +55,7 @@ public class AddingItem_StepDefinitions {
 
         //Actions builder = new Actions(Driver.getDriver());
         //builder.click(jcrewHomePage.sweatersButton).perform();
-        jcrewHomePage.sweatersButton.click();
-    }
+        SweaterButton.sweatersButton.click(); }
 
     @When("User chooses an item")
     public void user_chooses_an_item() {

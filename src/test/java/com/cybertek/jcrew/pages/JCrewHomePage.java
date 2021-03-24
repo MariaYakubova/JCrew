@@ -19,8 +19,8 @@ public class JCrewHomePage {
     @FindBy(xpath = "//a[@name='&lpos=nav_topnav>home>>>women']")
     public WebElement womenButton;
 
-    @FindBy(xpath = "//a[@name='&lpos=nav_topnav>home>>women>sweaters']")
-    public WebElement sweatersButton;
+   // @FindBy(xpath = "//a[@name='&lpos=nav_topnav>home>>women>sweaters']")
+   // public static WebElement sweatersButton;
 
     @FindBy(xpath = "(//a[@class='product-tile__link'])[1]")
     public WebElement itemButton;
