@@ -14,6 +14,7 @@ Feature: JCrew shopping bag check out.
     And User chooses the quantity of item
     Then User clicks Add To Bag button
     Then User clicks on Shopping Bag sign
+    Then User clicks keep shopping on Popup Window
 
 
 
