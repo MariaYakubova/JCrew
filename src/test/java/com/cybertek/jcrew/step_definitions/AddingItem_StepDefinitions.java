@@ -1,29 +1,28 @@
 package com.cybertek.jcrew.step_definitions;
 
 //import com.cybertek.jcrew.pages.ClickingTheSweaterButton;
-import com.cybertek.jcrew.pages.JCrewHomePage;
-import com.cybertek.jcrew.pages.SweaterButton;
-import com.cybertek.jcrew.utilities.BrowserUtils;
+import com.cybertek.jcrew.pages.*;
 import com.cybertek.jcrew.utilities.ConfigurationReader;
 import com.cybertek.jcrew.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import sun.jvm.hotspot.utilities.soql.JSJavaScriptEngine;
-
-import javax.security.auth.login.Configuration;
-import javax.swing.*;
-import java.util.List;
 
 public class AddingItem_StepDefinitions {
+
     JCrewHomePage jcrewHomePage = new JCrewHomePage();
-    SweaterButton sweaterButton = new SweaterButton();
+    //ChooseAnOptionSweater chooseAnOptionSweater = new ChooseAnOptionSweater();
+    ChooseTheItem chooseTheItem = new ChooseTheItem();
+   // ChooseTheColor chooseTheColor = new ChooseTheColor();
+    //ChooseTheSize chooseTheSize = new ChooseTheSize();
+    //ChooseTheQuantityOfTheItem chooseTheQuantityOfTheItem = new ChooseTheQuantityOfTheItem();
+    //AddToBagAnItem addToBagAnItem = new AddToBagAnItem();
+    CheckTheShoppingBag checkTheShoppingBag = new CheckTheShoppingBag();
+    ClosePopUpWindow closePopUpWindow = new ClosePopUpWindow();
+    //ShoppingBagPage shoppingBagPage = new ShoppingBagPage();
     // DropdownsPage dropdownsPage = new DropdownsPage();
 
     //Select quantityDropdown = new Select(JCrewHomePage.quantityDropdown);
@@ -55,27 +54,28 @@ public class AddingItem_StepDefinitions {
 
         //Actions builder = new Actions(Driver.getDriver());
         //builder.click(jcrewHomePage.sweatersButton).perform();
-        SweaterButton.sweatersButton.click(); }
+        jcrewHomePage.sweatersButton.click(); }
 
     @When("User chooses an item")
     public void user_chooses_an_item() {
-        jcrewHomePage.itemButton.click();
+    chooseTheItem.itemButton.click();
     }
 
     @When("User chooses color of item")
     public void user_chooses_color_of_item() {
-        jcrewHomePage.colorButton.click();
+        chooseTheItem.colorButton.click();
+
     }
 
     @When("User chooses the size of item")
     public void user_chooses_the_size_of_item() {
-        jcrewHomePage.sizeButton.click();
+        chooseTheItem.sizeButton.click();
     }
 
     @When("User chooses the quantity of item")
     public void user_chooses_the_quantity_of_item() {
-        jcrewHomePage.quantityDropdown.click();
-        Select quantityDropdown = new Select(jcrewHomePage.quantityDropdown);
+        chooseTheItem.quantityDropdown.click();
+        Select quantityDropdown = new Select(chooseTheItem.quantityDropdown);
         quantityDropdown.selectByValue("2");
 
         //List<String> actualTexts = BrowserUtils.getElementsText(quantityDropdown.getOptions());
@@ -85,14 +85,19 @@ public class AddingItem_StepDefinitions {
 
     @Then("User clicks Add To Bag button")
     public void user_clicks_add_to_bag_button() {
-        jcrewHomePage.addToBagButton.click();
+        chooseTheItem.addToBagButton.click();
 
     }
 
     @Then("User clicks keep shopping on Popup Window")
     public void userClicksKeepShoppingOnPopupWindow() throws InterruptedException {
         Thread.sleep(3000);
-        jcrewHomePage.popUpWindow.click();
+        try{
+            closePopUpWindow.popUpWindow.click();
+        }catch (Exception e ){
+            e.printStackTrace();
+        }
+        //jcrewHomePage.popUpWindow.click();
 
 
         //Thread.sleep(3000);
@@ -100,8 +105,8 @@ public class AddingItem_StepDefinitions {
 
         @Then("User clicks on Shopping Bag sign")
         public void user_clicks_on_shopping_bag_sign () {
-            jcrewHomePage.shoppingBagSign.click();
-            //Assert.assertTrue(expectedList.equals(actualTexts));
+            checkTheShoppingBag.shoppingBagSign.click();
+            Assert.assertTrue(checkTheShoppingBag.shoppingBag.isDisplayed());
 
 
 
