@@ -1,0 +1,149 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-30T21:40:00.300Z",
+        "line": 6,
+        "name": "",
+        "description": "",
+        "id": "jcrew-shopping-bag-check-out.;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25071000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the home page",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2594000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on the Woman",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_clicks_on_the_woman()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18048000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User  chooses Sweaters",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_chooses_sweaters()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13111000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User chooses an item",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_chooses_an_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7027000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User chooses color of item",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_chooses_color_of_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 701000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User chooses the size of item",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_chooses_the_size_of_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1154000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User chooses the quantity of item",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_chooses_the_quantity_of_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1159000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks Add To Bag button",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_clicks_add_to_bag_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13313000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks keep shopping on Popup Window",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.userClicksKeepShoppingOnPopupWindow()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27776000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on Shopping Bag sign",
+            "match": {
+              "location": "com.cybertek.jcrew.step_definitions.AddingItem_StepDefinitions.user_clicks_on_shopping_bag_sign()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@G24-41"
+          }
+        ]
+      }
+    ],
+    "name": "JCrew shopping bag check out.",
+    "description": "  As a user I should able to put items in\n  the shopping bag and check it out.",
+    "id": "jcrew-shopping-bag-check-out.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/addingItemToShoppingBag.feature",
+    "tags": []
+  }
+]
