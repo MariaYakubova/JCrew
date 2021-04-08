@@ -15,7 +15,7 @@ public class ChooseTheItem {
     @FindBy(xpath = "//div[@aria-label='Medium']")
     public WebElement sizeButton;
 
-    @FindBy(xpath = "//img[@src='https://www.jcrew.com/s7-img-facade/AX561_BL8133_sw?$pdp_sw20$']")
+    @FindBy(xpath = "//img[@src='https://www.jcrew.com/s7-img-facade/AX560_SU7314_sw?$pdp_sw20$']")
     public WebElement colorButton;
 
     @FindBy(xpath="//select[@id='product__quantity-selector']")

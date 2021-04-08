@@ -15,7 +15,9 @@ import org.junit.runner.RunWith;
     features = "src/test/resources/features",
         glue = "com/cybertek/jcrew/step_definitions",
         dryRun = false,
-        tags = "@G24-41"
+        tags =  "@G24-175"//"@G24-41"
+                //"@API"
+
 
 
 )

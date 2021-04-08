@@ -14,7 +14,7 @@ public class CheckTheShoppingBag {
     @FindBy(xpath = "//li[@class='nc-nav__menu-tab nc-nav__bag nc-nav__list-item']")
     public WebElement shoppingBagSign;
 
-    @FindBy(xpath = "//img[@alt='Puff-sleeve ribbed sweater']")
+    @FindBy(xpath = "//img[@alt='Short-sleeve sweater in textured stripe']")
     public WebElement shoppingBag;
 
 }
